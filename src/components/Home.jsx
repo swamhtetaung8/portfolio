@@ -17,10 +17,11 @@ const Home = () => {
             </span>
           </h1>
           <p className=" text-gray-500 max-w-md text-lg">
-            Highly motivated and productive IT student from University of
-            Information Technology. Working as a Japanese lecturer for more than
-            3 years. Currently studying full stack web development to become a
-            web developer.
+            Studied Computer Science for three years at University of
+            Information Technology with a passion for software engineering and
+            web development. Working as a Japanese lecturer for more than 3
+            years. Currently studying full stack web development to become a web
+            developer.
           </p>
           <Link to="portfolio" smooth duration={500}>
             <button className="group text-white bg-gradient-to-r from-cyan-500 to-blue-500 py-3 px-8 rounded-md flex items-center gap-2">
