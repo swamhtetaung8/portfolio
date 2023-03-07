@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GoX } from "react-icons/go";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 const Navbar = () => {
   const menu = [
     {
@@ -28,7 +29,11 @@ const Navbar = () => {
 
   const [nav, setNav] = useState(false);
   return (
-    <nav className="h-20 bg-black px-5 text-white flex items-center justify-between fixed w-full z-50">
+    <motion.nav
+      animate={{ x: 0 }}
+      initial={{ x: "-100vw" }}
+      transition={{ delay: 0.5, duration: 1 }}
+      className="h-20 bg-black px-5 text-white flex items-center justify-between fixed w-full z-50">
       <Link to="home" smooth duration={500}>
         <h1 className=" signature text-4xl cursor-pointer">Shinji</h1>
       </Link>
@@ -62,7 +67,7 @@ const Navbar = () => {
           ))}
         </ul>
       )}
-    </nav>
+    </motion.nav>
   );
 };
 

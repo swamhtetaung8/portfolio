@@ -5,21 +5,23 @@ import bookmark from "../assets/bookmark.png";
 import invoice from "../assets/invoice.png";
 import inori from "../assets/inori.png";
 import sushi from "../assets/sushi.png";
+import recipe from "../assets/recipe.png";
+import expensetracker from "../assets/expensetracker.png";
 const Portfolio = () => {
   const portfolio = [
     {
       id: 1,
-      demo: "https://todolist-sha.netlify.app/",
-      code: "https://github.com/swamhtetaung8/Todo-list/",
-      title: "Todo App with Vanilla JS",
-      img: todo,
+      demo: "https://sushi-sha.netlify.app/",
+      code: "https://github.com/swamhtetaung8/sushi",
+      title: "Sushi website with Bootstrap",
+      img: sushi,
     },
     {
       id: 2,
-      demo: "https://gpt3withreactbyswamhtetaung.netlify.app/",
-      code: "https://github.com/swamhtetaung8/gpt3",
-      title: "GPT3 Website with React",
-      img: gpt3,
+      demo: "https://invoiceapp-sha.netlify.app/",
+      code: "https://github.com/swamhtetaung8/invoice",
+      title: "Invoice App with Vanilla JS",
+      img: invoice,
     },
     {
       id: 3,
@@ -30,24 +32,24 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      demo: "https://inori.netlify.app/",
-      code: "https://github.com/swamhtetaung8/Inorivtuberwebsite",
-      title: "Personal project for a client",
-      img: inori,
+      demo: "https://money-tracker-sha.vercel.app/",
+      code: "https://github.com/swamhtetaung8/Money-tracker-react",
+      title: "Expense tracker App with React",
+      img: expensetracker,
     },
     {
       id: 5,
-      demo: "https://invoiceapp-sha.netlify.app/",
-      code: "https://github.com/swamhtetaung8/invoice",
-      title: "Invoice App with Vanilla JS",
-      img: invoice,
+      demo: "https://gpt3withreactbyswamhtetaung.netlify.app/",
+      code: "https://github.com/swamhtetaung8/gpt3",
+      title: "GPT3 Website with React",
+      img: gpt3,
     },
     {
       id: 6,
-      demo: "https://sushi-sha.netlify.app/",
-      code: "https://github.com/swamhtetaung8/sushi",
-      title: "Sushi website with Bootstrap",
-      img: sushi,
+      demo: "https://themealdb-practice-sha.vercel.app/",
+      code: "https://github.com/swamhtetaung8/themealdb-practice-react",
+      title: "Food recipe website with React and themealdb API",
+      img: recipe,
     },
   ];
   return (

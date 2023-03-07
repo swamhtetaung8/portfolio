@@ -61,7 +61,7 @@ const Skills = () => {
   return (
     <section
       name="skills"
-      className=" w-full min-h-screen bg-gradient-to-b from-gray-800 via-black to-black py-40">
+      className=" w-full min-h-screen bg-gradient-to-b from-gray-800 via-black to-black py-20">
       <div className="container mx-auto">
         <div className=" w-full min-h-screen flex justify-center items-center ">
           <div className="md:w-full p-10 w-auto">

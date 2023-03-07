@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FaFacebookSquare,
   FaGithubSquare,
@@ -62,7 +63,11 @@ const SocialLinks = () => {
   ];
   return (
     <div>
-      <ul className=" fixed lg:top-[35%] hidden lg:block">
+      <motion.ul
+        animate={{ y: 0 }}
+        initial={{ y: "100vh" }}
+        transition={{ delay: 1.5, duration: 1 }}
+        className=" fixed lg:top-[35%] hidden lg:block">
         {socials.map((social) => (
           <li
             key={social.id}
@@ -80,7 +85,7 @@ const SocialLinks = () => {
             </a>
           </li>
         ))}
-      </ul>
+      </motion.ul>
     </div>
   );
 };

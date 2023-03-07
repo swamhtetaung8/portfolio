@@ -2,12 +2,17 @@ import React from "react";
 import { BsChevronRight } from "react-icons/bs";
 import profile from "../assets/profile.jpg";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 const Home = () => {
   return (
     <section
       name="home"
       className=" w-full min-h-screen bg-gradient-to-b from-black via-black to-gray-800 pt-24 md:pt-0">
-      <div className=" w-full min-h-screen flex md:flex-row flex-col justify-center items-center gap-20 px-10">
+      <motion.div
+        animate={{ x: 0 }}
+        initial={{ x: "100vw" }}
+        transition={{ delay: 1, duration: 1 }}
+        className=" w-full min-h-screen flex md:flex-row flex-col justify-center items-center gap-20 px-10">
         <div className=" flex flex-col gap-10 items-start">
           <h1 className=" text-4xl text-white font-bold capitalize">
             I am Swam Htet Aung
@@ -35,7 +40,7 @@ const Home = () => {
         <div className="">
           <img src={profile} alt="" className=" h-96 rounded-md object-cover" />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
