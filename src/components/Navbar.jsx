@@ -29,11 +29,7 @@ const Navbar = () => {
 
   const [nav, setNav] = useState(false);
   return (
-    <motion.nav
-      animate={{ x: 0 }}
-      initial={{ x: "-100vw" }}
-      transition={{ delay: 0.5, duration: 1 }}
-      className="h-20 bg-black px-5 text-white flex items-center justify-between fixed w-full z-50">
+    <nav className="h-20 bg-black px-5 text-white flex items-center justify-between fixed w-full z-50">
       <Link to="home" smooth duration={500}>
         <h1 className=" signature text-4xl cursor-pointer">Shinji</h1>
       </Link>
@@ -67,7 +63,7 @@ const Navbar = () => {
           ))}
         </ul>
       )}
-    </motion.nav>
+    </nav>
   );
 };
 

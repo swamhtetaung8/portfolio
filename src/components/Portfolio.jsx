@@ -70,7 +70,7 @@ const Portfolio = () => {
               {portfolio.map((indi) => (
                 <div
                   key={"project" + indi.id}
-                  className=" max-w-sm  rounded-lg shadow shadow-gray-900 bg-gray-800 dark:border-gray-700 hover:scale-105 duration-200 hover:shadow-sm hover:shadow-slate-200">
+                  className=" max-w-sm  rounded-lg shadow-lg shadow-black/60 bg-gray-800 dark:border-gray-700 hover:scale-105 duration-200 hover:shadow-sm hover:shadow-slate-200">
                   <a href={indi.demo} target="_blank">
                     <img
                       className="rounded-t-lg w-full "

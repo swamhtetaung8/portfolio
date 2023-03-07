@@ -9,12 +9,12 @@ const Home = () => {
       name="home"
       className=" w-full min-h-screen bg-gradient-to-b from-black via-black to-gray-800 pt-24 md:pt-0">
       <motion.div
-        animate={{ x: 0 }}
-        initial={{ x: "100vw" }}
-        transition={{ delay: 1, duration: 1 }}
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 2.5, delay: 0.5 }}
         className=" w-full min-h-screen flex md:flex-row flex-col justify-center items-center gap-20 px-10">
         <div className=" flex flex-col gap-10 items-start">
-          <h1 className=" text-4xl text-white font-bold capitalize">
+          <h1 className="text-4xl text-white font-bold capitalize">
             I am Swam Htet Aung
             <br />
             <span className=" text-gray-200 my-3 border-b-4 pb-3 border-gray-500 text-lg">
