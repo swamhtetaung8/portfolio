@@ -56,7 +56,7 @@ const SocialLinks = () => {
           </span>
         </>
       ),
-      href: "/resume-swamhtetaung.pdf",
+      href: "/Resume - Swam Htet Aung.pdf",
       download: true,
       style: "rounded-br-md",
     },
@@ -65,7 +65,7 @@ const SocialLinks = () => {
     <div>
       <motion.ul
         animate={{ y: 0 }}
-        initial={{ y: "100vh" }}
+        initial={{ y: "-100vh" }}
         transition={{ delay: 1, duration: 1.5 }}
         className=" fixed lg:top-[35%] hidden lg:block">
         {socials.map((social) => (
