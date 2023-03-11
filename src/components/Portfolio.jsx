@@ -6,6 +6,7 @@ import invoice from "../assets/invoice.png";
 import inori from "../assets/inori.png";
 import sushi from "../assets/sushi.png";
 import recipe from "../assets/recipe.png";
+import cart from "../assets/cart.png";
 import expensetracker from "../assets/expensetracker.png";
 const Portfolio = () => {
   const portfolio = [
@@ -18,10 +19,10 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      demo: "https://invoiceapp-sha.netlify.app/",
-      code: "https://github.com/swamhtetaung8/invoice",
-      title: "Invoice App with Vanilla JS",
-      img: invoice,
+      demo: "https://cart-management-sha.netlify.app/",
+      code: "https://github.com/swamhtetaung8/react-cart",
+      title: "E-commerce cart management with React",
+      img: cart,
     },
     {
       id: 3,
