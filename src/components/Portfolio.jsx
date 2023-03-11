@@ -89,7 +89,7 @@ const Portfolio = () => {
                         href={indi.demo}
                         target="_blank"
                         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-700 rounded-lg hover:bg-cyan-800  dark:bg-cyan-600 dark:hover:bg-cyan-700">
-                        Demo
+                        Website
                       </a>
                       <a
                         href={indi.code}
