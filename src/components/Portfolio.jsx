@@ -7,6 +7,7 @@ import inori from "../assets/inori.png";
 import sushi from "../assets/sushi.png";
 import recipe from "../assets/recipe.png";
 import cart from "../assets/cart.png";
+import rtkCart from "../assets/rtk-cart.png";
 import expensetracker from "../assets/expensetracker.png";
 const Portfolio = () => {
   const portfolio = [
@@ -19,10 +20,10 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      demo: "https://cart-management-sha.netlify.app/",
-      code: "https://github.com/swamhtetaung8/react-cart",
-      title: "E-commerce cart management with React",
-      img: cart,
+      demo: "https://rtk-cart-sha.vercel.app/",
+      code: "https://github.com/swamhtetaung8/rtk-cart",
+      title: "E-commerce cart management with Redux toolkit",
+      img: rtkCart,
     },
     {
       id: 3,
@@ -80,7 +81,7 @@ const Portfolio = () => {
                     />
                   </a>
                   <div className="p-5">
-                    <h5 className=" mb-8 text-2xl font-bold tracking-tight text-white text-center h-auto md:h-16">
+                    <h5 className=" mb-8 text-2xl font-bold tracking-tight text-white text-center h-auto md:h-20">
                       {indi.title}
                     </h5>
 
