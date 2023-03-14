@@ -9,6 +9,17 @@ import recipe from "../assets/recipe.png";
 import cart from "../assets/cart.png";
 import rtkCart from "../assets/rtk-cart.png";
 import expensetracker from "../assets/expensetracker.png";
+import { motion } from "framer-motion";
+
+const headerVariant = {
+  offscreen: { opacity: 0 },
+  onscreen: { opacity: 1, transition: { duration: 0.8 } },
+};
+const cardVariant = {
+  offscreen: { y: 100, opacity: 0 },
+  onscreen: { y: 0, opacity: 1, transition: { duration: 1.5 } },
+};
+
 const Portfolio = () => {
   const portfolio = [
     {
@@ -61,16 +72,32 @@ const Portfolio = () => {
       <div className="container mx-auto">
         <div className=" w-full min-h-screen flex justify-center items-center ">
           <div className="md:w-full p-10 w-auto">
-            <h1 className="text-4xl border-b-4 mb-10 border-gray-500 inline-block text-white">
-              Portfolio
-            </h1>
-            <p className=" text-gray-500 text-xl mb-10">
-              Check out some of my works below
-            </p>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              transition={{ staggerChildren: 0.5 }}
+              viewport={{ once: false, amount: 0.3 }}>
+              <motion.h1
+                variants={headerVariant}
+                className="text-4xl border-b-4 mb-10 border-gray-500 inline-block text-white">
+                Portfolio
+              </motion.h1>
+              <motion.p
+                variants={headerVariant}
+                className=" text-gray-500 text-xl mb-10">
+                Check out some of my works below.
+              </motion.p>
+            </motion.div>
 
-            <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-10">
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={cardVariant}
+              viewport={{ once: false, amount: 0.1 }}
+              className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-10 justify-items-center">
               {portfolio.map((indi) => (
                 <div
+                  variants={cardVariant}
                   key={"project" + indi.id}
                   className=" max-w-sm  rounded-lg shadow-lg shadow-black/60 bg-gray-800 dark:border-gray-700 hover:scale-105 duration-200 hover:shadow-sm hover:shadow-slate-200">
                   <a href={indi.demo} target="_blank">
@@ -102,7 +129,7 @@ const Portfolio = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

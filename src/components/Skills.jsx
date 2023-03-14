@@ -7,6 +7,16 @@ import tailwind from "../assets/skills/tailwind.png";
 import git from "../assets/skills/git.png";
 import react from "../assets/skills/react.png";
 import php from "../assets/skills/php.png";
+import { motion } from "framer-motion";
+const headerVariant = {
+  offscreen: { opacity: 0 },
+  onscreen: { opacity: 1, transition: { duration: 0.8 } },
+};
+const cardVariant = {
+  offscreen: { y: 100, opacity: 0 },
+  onscreen: { y: 0, opacity: 1, transition: { duration: 1.5 } },
+};
+
 const Skills = () => {
   const skills = [
     {
@@ -64,15 +74,29 @@ const Skills = () => {
       className=" w-full min-h-screen bg-gradient-to-b from-gray-800 via-black to-black py-20">
       <div className="container mx-auto">
         <div className=" w-full min-h-screen flex justify-center items-center ">
-          <div className="md:w-full p-10 w-auto">
-            <h1 className="text-4xl border-b-4 mb-10 border-gray-500 inline-block text-white">
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            transition={{ staggerChildren: 0.5 }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="md:w-full p-10 w-auto">
+            <motion.h1
+              variants={headerVariant}
+              className="text-4xl border-b-4 mb-10 border-gray-500 inline-block text-white">
               Skills
-            </h1>
-            <p className=" text-gray-500 text-xl mb-10">
+            </motion.h1>
+            <motion.p
+              variants={headerVariant}
+              className=" text-gray-500 text-xl mb-10">
               These are the languages and skills I've worked with so far.
-            </p>
+            </motion.p>
 
-            <div className="grid lg:grid-cols-4 grid-cols-2 md:grid-cols-3 gap-5 md:gap-10">
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={cardVariant}
+              viewport={{ once: false, amount: 0.1 }}
+              className="grid lg:grid-cols-4 grid-cols-2 md:grid-cols-3 gap-5 md:gap-10">
               {skills.map((indi) => (
                 <div
                   key={indi.id}
@@ -93,8 +117,8 @@ const Skills = () => {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>

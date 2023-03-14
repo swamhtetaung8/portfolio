@@ -65,8 +65,8 @@ const SocialLinks = () => {
     <div>
       <motion.ul
         animate={{ y: 0 }}
-        initial={{ y: "-100vh" }}
-        transition={{ delay: 1, duration: 1.5 }}
+        initial={{ y: "100vh" }}
+        transition={{ delay: 1, duration: 1 }}
         className=" fixed lg:top-[35%] hidden lg:block">
         {socials.map((social) => (
           <li

@@ -1,5 +1,16 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
+
+const headerVariant = {
+  offscreen: { opacity: 0 },
+  onscreen: { opacity: 1, transition: { duration: 0.8 } },
+};
+const formVariant = {
+  offscreen: { y: 100, opacity: 0 },
+  onscreen: { y: 0, opacity: 1, transition: { duration: 0.8 } },
+};
+
 const Contact = () => {
   const form = useRef();
   const nameRef = useRef();
@@ -41,15 +52,33 @@ const Contact = () => {
       className=" w-full min-h-screen bg-gradient-to-b from-black via-black to-gray-800 py-40">
       <div className="container mx-auto">
         <div className="p-10">
-          <h1 className="text-4xl border-b-4 mb-10 border-gray-500 inline-block text-white">
-            Contact
-          </h1>
-          <p className=" text-gray-500 text-xl mb-10">
-            Feel free to ask if you have any questions.
-          </p>
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            transition={{ staggerChildren: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}>
+            <motion.h1
+              variants={headerVariant}
+              className="text-4xl border-b-4 mb-10 border-gray-500 inline-block text-white">
+              Contact
+            </motion.h1>
+            <motion.p
+              variants={headerVariant}
+              className=" text-gray-500 text-xl mb-10">
+              Feel free to ask if you have any questions.
+            </motion.p>
+          </motion.div>
 
           <div className=" flex justify-center items-center py-10">
-            <form action="" ref={form} onSubmit={sendEmail} className=" w-96">
+            <motion.form
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              viewport={{ once: false, amount: 0.5 }}
+              variants={formVariant}
+              action=""
+              ref={form}
+              onSubmit={sendEmail}
+              className=" w-96">
               <div className="relative z-0 w-full mb-6 group">
                 <input
                   type="email"
@@ -107,7 +136,7 @@ const Contact = () => {
                 disabled={submitBg}>{`${
                 loader ? "Sending . . ." : submitValue
               } `}</button>
-            </form>
+            </motion.form>
           </div>
         </div>
       </div>
