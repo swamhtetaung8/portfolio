@@ -7,7 +7,7 @@ import inori from "../assets/inori.png";
 import sushi from "../assets/sushi.png";
 import recipe from "../assets/recipe.png";
 import cart from "../assets/cart.png";
-import rtkCart from "../assets/rtk-cart.png";
+import simpuru from "../assets/simpuru.png";
 import expensetracker from "../assets/expensetracker.png";
 import { motion } from "framer-motion";
 
@@ -31,10 +31,10 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      demo: "https://rtk-cart-sha.vercel.app/",
+      demo: "https://simpuru.vercel.app/",
       code: "https://github.com/swamhtetaung8/rtk-cart",
       title: "E-commerce cart management with Redux toolkit",
-      img: rtkCart,
+      img: simpuru,
     },
     {
       id: 3,
