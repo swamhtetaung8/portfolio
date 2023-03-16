@@ -51,7 +51,7 @@ const Footer = () => {
           </span>
         </>
       ),
-      href: "/Resume - Swam Htet Aung.pdf",
+      href: "/Resume.pdf",
       download: true,
       style: "rounded-br-md",
     },
