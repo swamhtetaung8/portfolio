@@ -1,16 +1,12 @@
 import React from "react";
-import todo from "../assets/todo.png";
 import gpt3 from "../assets/gpt3.png";
 import bookmark from "../assets/bookmark.png";
-import invoice from "../assets/invoice.png";
-import inori from "../assets/inori.png";
 import sushi from "../assets/sushi.png";
 import recipe from "../assets/recipe.png";
-import cart from "../assets/cart.png";
 import simpuru from "../assets/simpuru.png";
 import expensetracker from "../assets/expensetracker.png";
 import { motion } from "framer-motion";
-
+import netflix from "../assets/netflix-clone.png";
 const headerVariant = {
   offscreen: { opacity: 0 },
   onscreen: { opacity: 1, transition: { duration: 0.8 } },
@@ -64,6 +60,13 @@ const Portfolio = () => {
       title: "Food recipe website with React and themealdb API",
       img: recipe,
     },
+    {
+      id: 7,
+      demo: "https://movie-sha.vercel.app/",
+      code: "https://github.com/swamhtetaung8/netflix-clone",
+      title: "Netflix clone with React and Firebase",
+      img: netflix,
+    },
   ];
   return (
     <section
@@ -99,10 +102,10 @@ const Portfolio = () => {
                 <div
                   variants={cardVariant}
                   key={"project" + indi.id}
-                  className=" max-w-sm  rounded-lg shadow-lg shadow-black/60 bg-gray-800 dark:border-gray-700 hover:scale-105 duration-200 hover:shadow-sm hover:shadow-slate-200">
+                  className=" group max-w-sm  rounded-lg shadow-lg shadow-black/60 bg-gray-800 dark:border-gray-700 duration-200 ">
                   <a href={indi.demo} target="_blank">
                     <img
-                      className="rounded-t-lg w-full "
+                      className="rounded-t-lg w-full group"
                       src={indi.img}
                       alt="project-thumbnail"
                     />
@@ -116,13 +119,13 @@ const Portfolio = () => {
                       <a
                         href={indi.demo}
                         target="_blank"
-                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-700 rounded-lg hover:bg-cyan-800">
+                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-500 rounded-lg transition-all duration-300 hover:bg-cyan-600">
                         Website
                       </a>
                       <a
                         href={indi.code}
                         target="_blank"
-                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-700 rounded-lg hover:bg-cyan-800">
+                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  rounded-lg border border-white hover:bg-white hover:text-black hover:border-black transition-all duration-300">
                         Code
                       </a>
                     </div>

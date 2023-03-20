@@ -6,7 +6,7 @@ import bootstrap from "../assets/skills/bootstrap.png";
 import tailwind from "../assets/skills/tailwind.png";
 import git from "../assets/skills/git.png";
 import react from "../assets/skills/react.png";
-import php from "../assets/skills/php.png";
+import redux from "../assets/skills/redux.svg";
 import { motion } from "framer-motion";
 const headerVariant = {
   offscreen: { opacity: 0 },
@@ -63,8 +63,8 @@ const Skills = () => {
     },
     {
       id: 8,
-      name: "PHP",
-      img: php,
+      name: "Redux Toolkit",
+      img: redux,
       shadow: "shadow-purple-400",
     },
   ];
@@ -101,7 +101,7 @@ const Skills = () => {
                 <div
                   key={indi.id}
                   className={
-                    " max-w-sm  rounded-lg bg-gray-800 dark:border-gray-700 hover:scale-105 duration-200  shadow-md " +
+                    " max-w-sm  rounded-lg bg-gray-800  duration-200  shadow-md " +
                     indi.shadow
                   }>
                   <img
@@ -110,8 +110,8 @@ const Skills = () => {
                     alt="skill-logo"
                   />
 
-                  <div className="pt-10">
-                    <h5 className=" mb-8 text-2xl font-bold tracking-tight text-white text-center ">
+                  <div className="md:pt-10 pt-5">
+                    <h5 className=" mb-8 md:text-2xl text-xl font-bold tracking-tight text-white text-center ">
                       {indi.name}
                     </h5>
                   </div>

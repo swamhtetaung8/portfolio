@@ -34,7 +34,8 @@ const About = () => {
               Hi, my name is Swam Htet Aung and I use Shinji as my nickname
               across social medias. I’m a front end web developer from Myanmar.
               Aside from coding, I’m also passionate about sports and gaming.
-              Currently, I’m learning more about Redux toolkit, NextJs and PHP.
+              Currently, I’m learning more about Redux toolkit, NextJs and
+              NodeJs.
             </p>
             <br />
             <p className=" py-3 text-xl text-gray-500 leading-8 tracking-wide">
