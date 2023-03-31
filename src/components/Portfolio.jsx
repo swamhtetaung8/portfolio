@@ -27,8 +27,8 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      demo: "https://simpuru.vercel.app/",
-      code: "https://github.com/swamhtetaung8/rtk-cart",
+      demo: "https://simpuru-ecommerce.vercel.app/",
+      code: "https://github.com/swamhtetaung8/simpuru-ecommerce",
       title: "E-commerce cart management with Redux toolkit",
       img: simpuru,
     },
