@@ -101,7 +101,7 @@ const Skills = () => {
                 <div
                   key={indi.id}
                   className={
-                    " max-w-sm  rounded-lg bg-gray-800  duration-200  shadow-md " +
+                    " max-w-sm md:hover:scale-105  rounded-lg bg-gray-800  duration-200  shadow-md " +
                     indi.shadow
                   }>
                   <img

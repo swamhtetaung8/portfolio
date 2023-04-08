@@ -34,34 +34,27 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      demo: "https://bookmarkwebsitebyswamhtetaung.netlify.app/",
-      code: "https://github.com/swamhtetaung8/Bookmarklandingpage",
-      title: "Bookmark Landing Page with Bootstrap",
-      img: bookmark,
-    },
-    {
-      id: 4,
       demo: "https://money-tracker-sha.vercel.app/",
       code: "https://github.com/swamhtetaung8/Money-tracker-react",
       title: "Expense tracker App with React",
       img: expensetracker,
     },
     {
-      id: 5,
+      id: 4,
       demo: "https://gpt3withreactbyswamhtetaung.netlify.app/",
       code: "https://github.com/swamhtetaung8/gpt3",
       title: "GPT3 Website with React",
       img: gpt3,
     },
     {
-      id: 6,
+      id: 5,
       demo: "https://themealdb-practice-sha.vercel.app/",
       code: "https://github.com/swamhtetaung8/themealdb-practice-react",
       title: "Food recipe website with React and themealdb API",
       img: recipe,
     },
     {
-      id: 7,
+      id: 6,
       demo: "https://movie-sha.vercel.app/",
       code: "https://github.com/swamhtetaung8/netflix-clone",
       title: "Netflix clone with React and Firebase",
@@ -102,10 +95,10 @@ const Portfolio = () => {
                 <div
                   variants={cardVariant}
                   key={"project" + indi.id}
-                  className=" group max-w-sm  rounded-lg shadow-lg shadow-black/60 bg-gray-800 dark:border-gray-700 duration-200 ">
+                  className=" group max-w-sm  rounded-lg shadow-lg shadow-black/60 bg-gray-800 md:hover:scale-105 border-gray-700 duration-200 ">
                   <a href={indi.demo} target="_blank">
                     <img
-                      className="rounded-t-lg w-full group"
+                      className="rounded-t-lg w-full"
                       src={indi.img}
                       alt="project-thumbnail"
                     />
