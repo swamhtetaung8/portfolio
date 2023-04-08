@@ -3,7 +3,7 @@ import html from "../assets/skills/html.png";
 import css from "../assets/skills/css.png";
 import js from "../assets/skills/js.png";
 import bootstrap from "../assets/skills/bootstrap.png";
-import tailwind from "../assets/skills/tailwind.png";
+import tailwind from "../assets/skills/tailwind.svg";
 import git from "../assets/skills/git.png";
 import react from "../assets/skills/react.png";
 import redux from "../assets/skills/redux.svg";
@@ -52,7 +52,7 @@ const Skills = () => {
     },
     {
       id: 6,
-      name: "Tailwind",
+      name: "Tailwind CSS",
       img: tailwind,
       shadow: "shadow-sky-500",
     },
