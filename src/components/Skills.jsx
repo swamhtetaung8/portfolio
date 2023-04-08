@@ -7,6 +7,7 @@ import tailwind from "../assets/skills/tailwind.png";
 import git from "../assets/skills/git.png";
 import react from "../assets/skills/react.png";
 import redux from "../assets/skills/redux.svg";
+import php from "../assets/skills/php.png";
 import { motion } from "framer-motion";
 const headerVariant = {
   offscreen: { opacity: 0 },
@@ -57,15 +58,15 @@ const Skills = () => {
     },
     {
       id: 7,
-      name: "Git",
-      img: git,
-      shadow: "shadow-orange-700",
+      name: "PHP",
+      img: php,
+      shadow: "shadow-purple-400",
     },
     {
       id: 8,
       name: "Redux Toolkit",
       img: redux,
-      shadow: "shadow-purple-400",
+      shadow: "shadow-purple-500",
     },
   ];
   return (
