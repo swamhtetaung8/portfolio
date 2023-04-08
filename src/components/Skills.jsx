@@ -60,13 +60,13 @@ const Skills = () => {
       id: 7,
       name: "PHP",
       img: php,
-      shadow: "shadow-purple-400",
+      shadow: "shadow-purple-300",
     },
     {
       id: 8,
       name: "Redux Toolkit",
       img: redux,
-      shadow: "shadow-purple-500",
+      shadow: "shadow-purple-400",
     },
   ];
   return (
