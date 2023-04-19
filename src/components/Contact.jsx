@@ -49,14 +49,14 @@ const Contact = () => {
   return (
     <section
       name="contact"
-      className=" w-full min-h-screen bg-gradient-to-b from-black via-black to-gray-800 py-40">
+      className=" w-full min-h-screen bg-gradient-to-b from-black via-black to-gray-800 pt-40 pb-20">
       <div className="container mx-auto">
         <div className="p-10">
           <motion.div
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.5 }}
-            viewport={{ once: false, amount: 0.5 }}>
+            viewport={{ once: true, amount: 0.5 }}>
             <motion.h1
               variants={headerVariant}
               className="text-4xl border-b-4 mb-10 border-gray-500 inline-block text-white">
@@ -73,7 +73,7 @@ const Contact = () => {
             <motion.form
               initial={"offscreen"}
               whileInView={"onscreen"}
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               variants={formVariant}
               action=""
               ref={form}

@@ -27,7 +27,7 @@ const Home = () => {
           initial={"offscreen"}
           whileInView={"onscreen"}
           transition={{ staggerChildren: 0.5 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           className=" flex flex-col gap-10 items-start">
           <motion.h1
             variants={headerVariant}
@@ -35,7 +35,7 @@ const Home = () => {
             I am Swam Htet Aung
             <br />
             <span className=" text-gray-200 my-3 border-b-4 pb-3 border-gray-500 text-lg">
-              A Front End Developer
+              Web Developer
             </span>
           </motion.h1>
           <motion.p
@@ -62,10 +62,12 @@ const Home = () => {
           initial={"offscreen"}
           whileInView={"onscreen"}
           transition={{ staggerChildren: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
           className="">
           <motion.img
             src={profile}
             variants={imageVariant}
+            viewport={{ once: true, amount: 0.3 }}
             alt=""
             className=" h-96 rounded-md object-cover"
           />

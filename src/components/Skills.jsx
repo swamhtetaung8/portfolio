@@ -79,7 +79,7 @@ const Skills = () => {
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.5 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="md:w-full p-10 w-auto">
             <motion.h1
               variants={headerVariant}
@@ -96,7 +96,7 @@ const Skills = () => {
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={cardVariant}
-              viewport={{ once: false, amount: 0.1 }}
+              viewport={{ once: true, amount: 0.1 }}
               className="grid lg:grid-cols-4 grid-cols-2 md:grid-cols-3 gap-5 md:gap-10">
               {skills.map((indi) => (
                 <div

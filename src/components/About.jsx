@@ -15,7 +15,7 @@ const About = () => {
         initial={"offscreen"}
         whileInView={"onscreen"}
         transition={{ staggerChildren: 0.5 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
         className=" container p-10">
         <motion.h1
           variants={paraVariant}
@@ -32,10 +32,9 @@ const About = () => {
           <motion.div variants={paraVariant}>
             <p className=" py-3 text-xl text-gray-500 leading-8 tracking-wide">
               Hi, my name is Swam Htet Aung and I use Shinji as my nickname
-              across social medias. I’m a front end web developer from Myanmar.
-              Aside from coding, I’m also passionate about sports and gaming.
-              Currently, I’m learning more about Redux toolkit, NextJs and
-              NodeJs.
+              across social medias. I’m a web developer from Myanmar. Aside from
+              coding, I’m also passionate about sports and gaming. Currently,
+              I’m learning more about Redux toolkit, NextJs and NodeJs.
             </p>
             <br />
             <p className=" py-3 text-xl text-gray-500 leading-8 tracking-wide">

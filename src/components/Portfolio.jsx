@@ -1,6 +1,5 @@
 import React from "react";
 import gpt3 from "../assets/gpt3.png";
-import bookmark from "../assets/bookmark.png";
 import sushi from "../assets/sushi.png";
 import recipe from "../assets/recipe.png";
 import simpuru from "../assets/simpuru.png";
@@ -72,7 +71,7 @@ const Portfolio = () => {
               initial={"offscreen"}
               whileInView={"onscreen"}
               transition={{ staggerChildren: 0.5 }}
-              viewport={{ once: false, amount: 0.3 }}>
+              viewport={{ once: true, amount: 0.3 }}>
               <motion.h1
                 variants={headerVariant}
                 className="text-4xl border-b-4 mb-10 border-gray-500 inline-block text-white">
@@ -89,7 +88,7 @@ const Portfolio = () => {
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={cardVariant}
-              viewport={{ once: false, amount: 0.1 }}
+              viewport={{ once: true, amount: 0.1 }}
               className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-10 justify-items-center">
               {portfolio.map((indi) => (
                 <div
